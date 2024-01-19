@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "Access-Control-Allow-Origin",
+          "operation": "set",
+          "value": "https://business.facebook.com"
+        }
+      ],
+      "requestHeaders": [
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://business.facebook.com"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://business.facebook.com",
+      "resourceTypes": ["main_frame", "xmlhttprequest"]
+    }
+  }
+]
